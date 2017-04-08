@@ -1,6 +1,7 @@
 :root {
   --bg-color: #408f85;
   --fg-color: #afd5c8;
+  --width: 772px;
 }
 
 .menu {
@@ -76,14 +77,18 @@ body {
   background: #408f85;
 }
 
-article img {
+article .img {
   max-width: 100%;
-  margin: auto;
+  margin: 2em auto 2em auto;
+}
+
+article .img img {
+  max-width: 100%;
 }
 
 article p, article li {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 21px;
+  line-height: 28px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -101,12 +106,59 @@ article p, article li {
 }
 
 article, .footer-content, .menu .container {
-  max-width: 800px;
+  max-width: var(--width);
   margin: 0 auto;
   padding: 0 1em;
 }
 
-article img {
+div.content div.img p.caption {
+  font-size: 18px;
+  padding: 0.5em;
+  text-align: center;
+}
+
+div.content div.img-block {
+  background-image: url(/assets/img/illust.png);
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  margin: 20px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+div.img-block img {
   margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: var(--width);
+}
+
+div.content div.img-block div.text-overlay {
+  color: white;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.embed-content {
+  margin: 2em auto 2em auto;
+}
+
+.embed-content iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  #banner { height: 100px }
 }

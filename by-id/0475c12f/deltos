@@ -1,0 +1,76 @@
+id: 0475c12f
+date: "2017-05-10T22:30:26.060+0900"
+title: "April Report: Rising Arch, Tokoyo no Tou, Unreal Life, and Strange Telephone Postmortem"
+tags: [published, reports]
+template: en
+---
+
+This month's event started out with a presentation by [Caras
+Ohmi](https://twitter.com/CarasOhmi) of [Banraku
+Games](http://banraku-games.sakura.ne.jp/) about their in-development game
+[Rising Arch](http://banraku-games.sakura.ne.jp/RisingArch/index.html), a
+shooting game controlled entirely with the mouse. A demo was distributed at
+[Digigame Expo](http://digigame-expo.org/) and Comiket last year and can also
+be played online [here](http://banraku-games.sakura.ne.jp/RisingArchTrial/index.html). For an
+early demo it's already got a high degree of polish and is fun to play; this is
+one to keep an eye on. 
+
+!embed https://www.youtube.com/watch?v=k7LFoXRi52A
+<iframe width="853" height="480" src="https://www.youtube.com/embed/k7LFoXRi52A?feature=oembed" frameborder="0" allowfullscreen></iframe>
+
+
+Next up, [Saebashi](https://twitter.com/saebashi) showed his in-development
+[Tokoyo no Tou](http://commentout.info/tokoyo/), a
+platformer where the world is regenerated every day. The randomly generated
+world is the same for all players, like daily seeds seen in games like Spelunky
+or Nuclear Throne, and the game is planned to include light social elements
+such as leaving warning messages for other players. Saebashi also shared his
+perspective on coming to game development in Unity from a background as a
+designer. He had one critical piece of advice for people starting game dev: go
+to game jams! It's a great place to learn what's involved in making a game and
+meet people who have skills you don't. 
+
+!img tokoyo.png Tokoyo no Tou, a sidescroller in an ever-changing tower
+
+Next [Hako](https://twitter.com/clrfnd) showed off the side-scrolling
+adventure game he's working on, Unreal Life. The main character is a girl who
+lost her memories, and can regain them by touching objects in the mysterious
+world she finds herself in with the help of a talking traffic light. For Tokyo
+Indie Fest he'll be releasing a demo with one chapter to play, as well as
+showing his currently available [Color
+Finder](http://hakolife.net/colorfinder/), a block-pushing puzzle game with
+color based mechanics and lovely pixel art.
+
+!embed https://www.youtube.com/watch?v=t-k8ATeKFXY
+<iframe width="853" height="480" src="https://www.youtube.com/embed/t-k8ATeKFXY?feature=oembed" frameborder="0" allowfullscreen></iframe>
+
+
+The last presentation this month was a post-mortem of [Strange
+Telephone](http://magniflop.com/st) by [Yuta](https://twitter.com/yyuta342).
+Strange Telephone is an adventure game about navigating a mysterious universe
+by dialing phone numbers to travel to different worlds, currently available for
+iOS and Android. 
+
+!embed https://www.youtube.com/watch?v=RHPLn-5lNL8
+<iframe width="853" height="480" src="https://www.youtube.com/embed/RHPLn-5lNL8?feature=oembed" frameborder="0" allowfullscreen></iframe>
+
+
+Yuta cited [Yume Nikki](http://www3.nns.ne.jp/pri/tk-mto/) and
+[LSD](https://en.wikipedia.org/wiki/LSD_%28video_game%29) (the game) as major
+influences in making Strange Telephone. Reflecting on what went well, he noted
+that the game struck a chord with Yumi Nikki fans, which helped sales and
+resulted in great positive feedback. Besides fans of Yume Nikki praising the
+feel of the game, the art was also widely well reviewed. He was also fortunate
+to have a lot of fan art made of the characters from the game. Materially
+speaking, the game sold well enough he could quit his day job and become a
+full-time independent game developer.
+
+Summarizing negative feedback he recieved about the game, a lot of people felt
+it was too short, just didn't get what it was about, found it boring, or
+thought it was too expensive. (For reference, the game sells for 480 yen). 
+
+Finally he discussed some of his plans going forward, including working on
+producing goods, releasing the game on Steam, and adding more content and
+language support. It's a lot to look forward to!
+
+That was it for this month's Tokyo Indies, catch you next month! 🎮

@@ -108,6 +108,8 @@ article p, article li {
   text-decoration: underline;
 }
 
+.tags { display: none }
+
 article, .footer-content, .menu .container {
   max-width: var(--width);
   margin: 0 auto;

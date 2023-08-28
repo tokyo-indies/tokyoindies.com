@@ -31,3 +31,8 @@ url = "https://discord.gg/asobu"
 [[params.ananke_socials]]
 name = "twitch"
 url = "https://www.twitch.tv/asobudev"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

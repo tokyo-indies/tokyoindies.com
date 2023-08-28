@@ -1,4 +1,7 @@
 header {
-  background: url(/tokyo-indies-banner.png);
   background-repeat: none;
+}
+
+.bg-black {
+  background: #408f85;
 }

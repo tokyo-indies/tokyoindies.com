@@ -1,10 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Tokyo Indiesへようこそ！ on Tokyo Indies</title>
+    <link>https://tokyoindies.com/</link>
+    <description>Recent content in Tokyo Indiesへようこそ！ on Tokyo Indies</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Sat, 26 Aug 2023 14:43:16 +0900</lastBuildDate><atom:link href="https://tokyoindies.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9月 Tokyo Indies</title>
+      <link>https://tokyoindies.com/posts/blah/</link>
+      <pubDate>Sat, 26 Aug 2023 14:43:16 +0900</pubDate>
+      
+      <guid>https://tokyoindies.com/posts/blah/</guid>
+      <description>今月のイベントは東京ゲームショー直前の開催となります。</description>
+    </item>
+    
+    <item>
+      <title>アクセス</title>
+      <link>https://tokyoindies.com/access/</link>
+      <pubDate>Sat, 26 Aug 2023 14:43:16 +0900</pubDate>
+      
+      <guid>https://tokyoindies.com/access/</guid>
+      <description>開催日時 毎月第3水曜日 19:00～23:00
+入場料 1500円 (1ドリンク付き)
+会場 秋葉原 MOGRA
+東京都台東区秋葉原 3-11 松菱ビル</description>
+    </item>
+    
+    <item>
+      <title>プレゼンの申し込み</title>
+      <link>https://tokyoindies.com/present/</link>
+      <pubDate>Sat, 26 Aug 2023 14:43:16 +0900</pubDate>
+      
+      <guid>https://tokyoindies.com/present/</guid>
+      <description>Tokyo Indiesは常にプレゼンターを募集しています。開発中の作品でも大歓迎なのでお気軽にご応募ください。
+展示・デモの持ち込みに関して、申請は不要です（このフォームを使わないでください）。ただ、スペースに限りがあって、スペースの利用は先着優先であることをご理解ください。
+プレゼンテーションについて プレゼンは20:30時ごろから始まります プレゼンは5分程度でお願いします 会場にはプレゼン用のPCがあります、詳細についてはご相談ください 他の詳細についてはよくある質問をご確認ください。
+応募フォームはこちら。</description>
+    </item>
+    
+    <item>
+      <title>よくある質問</title>
+      <link>https://tokyoindies.com/faq/</link>
+      <pubDate>Sat, 26 Aug 2023 14:43:16 +0900</pubDate>
+      
+      <guid>https://tokyoindies.com/faq/</guid>
+      <description>このページではイベントに関するよくある質問を集めています。お探しの情報がない場合、お気軽にご連絡ください。
+Tokyo Indies とはどんなイベントですか？ Tokyo Indiesでは、個人・小規模でゲーム開発を行っている方々がバーでおしゃべりすることが主体のイベントです。どなたでも空いているテーブルでゲームを展示できるので、開発中のゲームを遊んだり、試作品に対してコメントをもらったりなどできます。20時30分から約1時間、地下のDJスペースで数人の開発者によるプレゼンを行います。
+参加するにはどうすれば良いですか。 イベント当日、開始時間以降、直接会場へお越しください。入場料は現金のみ、ドリンクチケットもついています。プレゼンター以外の事前登録は必要ありません。また、プレゼンの時間以外に決まった席や事項があるわけではないので、途中の入場・退場も全く問題ありません。常連の中では仕事の都合で普段から一時間遅れて参加している方も少なくありません。
+ゲームを開発していませんけど参加してもいいですか？ ゲーム開発に興味があればイベントはもっと楽しめますが、どなたでも参加できます。
+どんな支払い方法に対応していますか。 入場料の支払いは現金のみとなりますが、バーでは様々な電子マネーに対応しています。詳細については会場までお問い合わせください。
+以下の質問はプレゼンに関連しています。
+プレゼンするにはどうすれば良いですか。 プレゼンター申請フォームから申し込んでください。どんなゲームでも歓迎しますが、プレゼンターの人数を把握するために申請をお願いしています。
+プレゼンターとして参加する場合、入場の際、受付にプレゼンターである旨を伝え、入場後地下のDJブースへお越しください。
+プレゼンはどんな内容がいいですか。 5分程度でゲームの紹介が基本のプレゼン内容です。事前にプレゼンを練習して、所要時間を確認してください！また、イベントの参加者のほとんどに開発経験があることを考慮して、開発のエピソードとかに触れるのも良いです。
+プレゼンするためにパソコンは必要ですか。 プレゼンはご持参のパソコンまたは会場のパソコンからできます。どちらでも構いませんが、機材トラブルなどを考えて、ご自分のPCを使う場合でもこちらにスライドをお送ることをおすすめしています。また、変換器について、一般的なものは会場に揃えておりますが、これも念の為にご持参いただければいろいろスムーズにいきます。
+スライドのファイル形式はどうすればいいですか。 Google Slidesがおすすめで、PPTXとPDFも問題ありません。どの形式でも、事前にこちらに送っていただくと、軽く問題がないかをチェックできます。
+Google Slidesの場合、動画などの埋め込みファイルの権限を必ず確認してください。
+PPTXやその他の形式の場合、フォントが埋め込まれているなど、作成したPCと別のPCでも表示できることをご確認ください。
+会場にはいつごろ到着すればいいですか。 プレゼンは20時30分開始なので、プレゼンターの方はできれば20時までのご到着をお願いしています。ご自分のPCでプレゼンする場合、できれば開場直後の19時ごろに機材チェックをおすすめしています。遅れそうな場合はお気軽にご相談ください。
+プレゼンは翻訳しなければいけないんですか。 プレゼンは日本語か英語、自然にゲームを紹介できる方で行ってください。英語のプレゼンの場合、日本語に通訳します。機械翻訳について、特にスライドなどの短い文章に関しては、翻訳の質が良くないので、極力使わないことをおすすめしています。</description>
+    </item>
+    
   </channel>
 </rss>

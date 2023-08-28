@@ -1,7 +1,7 @@
 ---
 title: "Location and Times"
 date: 2023-08-26T14:43:16+09:00
-draft: true
+draft: false
 menu: 'main'
 ---
 

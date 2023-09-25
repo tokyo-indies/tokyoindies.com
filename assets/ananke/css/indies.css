@@ -5,3 +5,8 @@ header {
 .bg-black {
   background: #408f85;
 }
+
+/* annoying icon on socials */
+.new-window {
+  display: none;
+}

@@ -21,6 +21,13 @@ menu: 'main'
 東京都台東区秋葉原
 3-11 松菱ビル
 
-<iframe title="Google マップ" aria-label="Google マップ" data-src="" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="" src="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/googleMap.4be2d908.html?defaultLocation=0&amp;showZoom=true&amp;showStreetView=true&amp;showMapType=true&amp;language=en&amp;id=dataItem-lam7bfrd&amp;googleMapsScriptPath=%2Fservices%2Feditor-elements-library%2Fdist%2Fthunderbolt%2Fmedia%2Fgoogle-map.min.78e15006.js&amp;origin=https%3A%2F%2Fwww.tokyoindies.com"></iframe>
-
-
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzDCFqmAzDBb4AP5-2FxryA6dY1iPwPyg
+    &q=秋葉原+MOGRA">
+</iframe>

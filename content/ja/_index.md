@@ -11,3 +11,5 @@ featured_image: /tokyo-indies-banner.png
 
 [プレゼン申請はこちらから！](/present)
 
+毎月の開催日をメールにて通知いたします。登録は[こちらから](http://eepurl.com/iA-lXM)できます。
+

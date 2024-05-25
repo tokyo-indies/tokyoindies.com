@@ -9,6 +9,7 @@ languageName = '日本語'
 
 [params]
  custom_css = ["indies.css"]
+ date_format = ":date_long"
 
 [languages]
   [languages.ja]

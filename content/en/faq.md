@@ -25,6 +25,14 @@ You'll get more out of the event if you're interested in making games, but there
 
 Entry is cash only, but the bar accepts IC cards and other payment methods.
 
+## Is it possible to leave and re-enter the event?
+
+If you leave and re-enter the venue, you will be charged for entry again. That said, it is no problem to enter or leave at any point during the event.
+
+## Is food available at the venue?
+
+The venue usually doesn't serve any food, so it's recommended you eat before coming. 
+
 -----
 
 The following questions are related to giving presentations.

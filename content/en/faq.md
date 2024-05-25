@@ -11,11 +11,16 @@ This page covers many commonly asked questions about Tokyo Indies. If something 
 
 The event is mainly indie devs casually hanging out in a bar. Anyone is welcome to set up a demo of their game at an empty table, so it's a good opportunity to see what's in development or get feedback on a prototype. Starting from 8:30 for roughly one hour, there will be presentations by a few developers in the basement club space.
 
+
 ## How do I participate?
 
 On the day of the event, come to the venue at any time after opening and pay at the door. Admission is cash only and includes one drink ticket. There is no preregistration (except for presenters), and it's fine to come and leave at any time - many regulars don't arrive until an hour after opening.
 
 If you would like to do a presentation please register via the presenter form. For presenters, the admission fee will be waived.
+
+## Can I demo my game at the event?
+
+Yes! Normally you can set up a demo using your own equipment in any open space on a first-come first-served basis. Note that some months we have a Theme Night, and allow reservations for games of a specific genre. See our [Twitter](https://twitter.com/tokyo_indies) for the latest news, where we'll be sure to announce any theme night.
 
 ## Do I need to make games to attend?
 

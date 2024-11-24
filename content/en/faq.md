@@ -20,7 +20,7 @@ If you would like to do a presentation please register via the presenter form. F
 
 ## Can I demo my game at the event?
 
-Yes! Normally you can set up a demo using your own equipment in any open space on a first-come first-served basis. Note that some months we have a Theme Night, and allow reservations for games of a specific genre. See our [Twitter](https://twitter.com/tokyo_indies) for the latest news, where we'll be sure to announce any theme night.
+Yes! Normally you can set up a demo using your own equipment in any open space on a first-come first-served basis. 
 
 ## Do I need to make games to attend?
 
@@ -37,6 +37,12 @@ If you leave and re-enter the venue, you will be charged for entry again. That s
 ## Is food available at the venue?
 
 The venue usually doesn't serve any food, so it's recommended you eat before coming. 
+
+## Can I upload photos of the event?
+
+Photos taken at Tokyo Indies are generally OK to share online, but if other people or other people's games are shown in the photo, please ask for permission from them first or add a blur/mosaic effect to hide them. 
+
+Please note that while we do our best to enforce this policy, many participants come to our event, and we cannot ensure that attendees of the event will not be photographed.
 
 -----
 

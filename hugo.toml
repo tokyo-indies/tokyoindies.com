@@ -31,7 +31,7 @@ url = "https://discord.com/invite/NZaHDmUXpM"
 
 [[params.ananke_socials]]
 name = "twitch"
-url = "https://www.twitch.tv/asobudev"
+url = "https://www.twitch.tv/tokyo_indies"
 
 [markup]
   [markup.goldmark]

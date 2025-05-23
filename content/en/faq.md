@@ -76,4 +76,4 @@ Presenters should arrive by 8PM, before presentations begin at 8:30. If using yo
 
 ## Do I need to translate my presentation?
 
-Please present in English or Japanese, whichever you are more comfortable with. If you present in English we can interpret into Japanese for you. Please DO NOT use machine translation for slides, as the results are often incomprehensible.
+Please present in English or Japanese, whichever you are more comfortable with. Our staff will intepret your presentation into the other language. Please DO NOT use machine translation for slides, as the results are often incomprehensible.

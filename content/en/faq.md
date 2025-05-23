@@ -32,7 +32,7 @@ Entry is cash only, but the bar accepts IC cards and other payment methods.
 
 ## Is it possible to leave and re-enter the event?
 
-If you leave and re-enter the venue, you will be charged for entry again. That said, it is no problem to enter or leave at any point during the event.
+Re-entry isn't prohibited, but if you leave and re-enter the venue, you will be charged for entry again.
 
 ## Is food available at the venue?
 

@@ -17,4 +17,5 @@ featured_image: /tokyo-indies-banner.png
 
 毎月の開催日をメールにて通知いたします。\
 登録は[こちらから](http://eepurl.com/iA-lXM)できます。
+[カレンダーに登録すること](https://calendar.google.com/calendar/u/0?cid=cnY5ZHY4NGs0M3Z1M3Y1OXNpc2xjYjA5M2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)もできます。
 

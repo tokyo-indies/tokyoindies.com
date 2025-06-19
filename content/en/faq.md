@@ -7,7 +7,7 @@ menu: 'main'
 
 This page covers many commonly asked questions about Tokyo Indies. If something isn't clear, feel free to [get in touch](mailto:contact@tokyoindies.com).
 
-![Tokyo Indiesの楽しみ方](img/4koma_intro_en.png)
+![What's Tokyo Indies?](/img/4koma_intro_en.png)
 
 ## What is the event like?
 

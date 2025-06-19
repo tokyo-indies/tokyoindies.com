@@ -7,6 +7,8 @@ menu: 'main'
 
 This page covers many commonly asked questions about Tokyo Indies. If something isn't clear, feel free to [get in touch](mailto:contact@tokyoindies.com).
 
+![Tokyo Indiesの楽しみ方](img/4koma_intro_en.png)
+
 ## What is the event like?
 
 The event is mainly indie devs casually hanging out in a bar. Anyone is welcome to set up a demo of their game at an empty table, so it's a good opportunity to see what's in development or get feedback on a prototype. Starting from 8:30 for roughly one hour, there will be presentations by a few developers in the basement club space.
@@ -20,7 +22,7 @@ If you would like to do a presentation please register via the presenter form. F
 
 ## Can I demo my game at the event?
 
-Yes! Normally you can set up a demo using your own equipment in any open space on a first-come first-served basis. 
+Yes! Normally you can set up a demo using your own equipment in any open space on a first-come first-served basis.
 
 ## Do I need to make games to attend?
 
@@ -36,11 +38,11 @@ Re-entry isn't prohibited, but if you leave and re-enter the venue, you will be 
 
 ## Is food available at the venue?
 
-The venue usually doesn't serve any food, so it's recommended you eat before coming. 
+The venue usually doesn't serve any food, so it's recommended you eat before coming.
 
 ## Can I upload photos of the event?
 
-Photos taken at Tokyo Indies are generally OK to share online, but if other people or other people's games are shown in the photo, please ask for permission from them first or add a blur/mosaic effect to hide them. 
+Photos taken at Tokyo Indies are generally OK to share online, but if other people or other people's games are shown in the photo, please ask for permission from them first or add a blur/mosaic effect to hide them.
 
 Please note that while we do our best to enforce this policy, many participants come to our event, and we cannot ensure that attendees of the event will not be photographed.
 

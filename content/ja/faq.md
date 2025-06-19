@@ -7,7 +7,7 @@ menu: 'main'
 
 このページではイベントに関するよくある質問を集めています。お探しの情報がない場合、[お気軽にご連絡ください](mailto:contact@tokyoindies.com)。
 
-![Tokyo Indiesの楽しみ方](img/4koma_intro)
+![Tokyo Indiesの楽しみ方](img/4koma_intro_ja.png)
 
 ## Tokyo Indies とはどんなイベントですか？
 

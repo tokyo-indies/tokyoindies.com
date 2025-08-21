@@ -106,6 +106,16 @@ Tower O-Ven (<a href="https://x.com/DessertSeed">Dessert Seed Studio</a>)
 
 -----
 
+<img src="/A_SIDE/PackedtotheGills/front.gif">
+
+<a href="https://moonlightjammers.itch.io/packed-to-the-gills">Packed to the Gills</a> (<a href="https://moonlightjammers.itch.io/">Moonlight Jammers</a>)
+
+> サラリーマンのにぼしになって通勤ラッシュの電車に体をつめるパズルゲーム。
+
+<a href="https://moonlightjammers.itch.io/packed-to-the-gills">販売ページ</a>
+
+-----
+
 <img src="/B_SIDE/YuushaOkashii/front.png">
 
 <a href="https://www.freem.ne.jp/win/game/29845">勇者の選択肢がおかしい</a> (<a href="https://x.com/3710nezu3">港ねずみ</a>)

@@ -28,6 +28,7 @@ url = "https://twitter.com/tokyo_indies"
 [[params.ananke_socials]]
 name = "bluesky"
 url = "https://bsky.app/profile/tokyoindies.com"
+icon = "fa-bluesky"
 
 [[params.ananke_socials]]
 name = "discord"

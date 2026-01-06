@@ -17,4 +17,4 @@ Exhibiting your game on an open table at the event is also encouraged, and pre-r
 
 For more information, see [the FAQ](/en/faq). If something is unclear, please apply anyway and we can discuss things in mail. Also, please do not send us machine-translated Japanese - we speak English!
 
-[Click here for the application form.](https://forms.gle/12uf6cTkpKMAb6G69)
+[Click here for the application form.](https://forms.gle/ouTU2LGTWrTwfvdAA)

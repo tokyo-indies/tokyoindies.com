@@ -4,7 +4,7 @@ date: 2026-01-23T16:16:47+09:00
 draft: false
 ---
 
-2026年の開催日は以下の通りになります。今年の開催は例外なく毎月の第3水曜日になります。このページの一覧の他、[カレンダー](https://calendar.google.com/calendar/u/0?cid=cnY5ZHY4NGs0M3Z1M3Y1OXNpc2xjYjA5M2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)も提供していますので、イベントを見逃さないようにぜひ登録してください。
+2026年の開催日は以下の通りになります。今年の開催は例外なく毎月の第3水曜日になります。このページの一覧の他、[カレンダー](https://calendar.google.com/calendar/embed?src=rv9dv84k43vu3v59sislcb093k%40group.calendar.google.com&ctz=Asia%2FTokyo)も提供していますので、イベントを見逃さないようにぜひ登録してください。
 
 - 2026-01-21
 - 2026-02-18

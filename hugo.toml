@@ -37,6 +37,10 @@ url = "https://discord.com/invite/NZaHDmUXpM"
 name = "twitch"
 url = "https://www.twitch.tv/tokyo_indies"
 
+[[params.ananke_socials]]
+name = "steam"
+url = "https://store.steampowered.com/curator/45232922-Tokyo-Indies/"
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]

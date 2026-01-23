@@ -10,3 +10,7 @@ header {
 .new-window {
   display: none;
 }
+
+a {
+  color: #90CCC4;
+}

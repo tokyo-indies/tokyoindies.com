@@ -50,7 +50,7 @@ draft: false
 
 次のTokyo Indiesは{event.month}月{event.day}日開催です。
 
-プレゼンは募集しています。詳細については[プレゼン申込みエージ](/present)をご確認ください。
+プレゼンを募集しています。詳細については[プレゼン申込みエージ](/present)をご確認ください。
 """
 
     mname = event.strftime("%B")  # "January" etc.

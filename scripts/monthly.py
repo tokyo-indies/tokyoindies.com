@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from datetime import date, timedelta, datetime
 import calendar
+from zoneinfo import ZoneInfo
 
 import argparse
 
@@ -40,7 +41,11 @@ def main():
     else:
         event = get_third_wed()
 
-    now = datetime.now()
+    # if the timezone is not supplied, Python generates an object with no
+    # timezone information. This results in an ISO datetime with no timezone
+    # info, which is valid in general, but Hugo won't publish the post T_T
+    jst = ZoneInfo("Asia/Tokyo")
+    now = datetime.now(jst).isoformat(timespec="seconds")
 
     japost = f"""---
 title: "{event.year}年{event.month}月のTokyo Indies"

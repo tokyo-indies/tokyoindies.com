@@ -9,7 +9,7 @@ Here are the dates Tokyo Indies will be held in 2026. This year the event will b
 - 2026-01-21
 - 2026-02-18
 - 2026-03-18
-- 2026-04-15
+- 2026-04-15 Retro Theme Night
 - 2026-05-20
 - 2026-06-17 Visual Novel / Adventure Theme Night
 - 2026-07-15
@@ -19,6 +19,6 @@ Here are the dates Tokyo Indies will be held in 2026. This year the event will b
 - 2026-11-18
 - 2026-12-16
 
-This year we will have theme nights, but not every other month like we did in previous years. Currently just two are planned, but we may add others. 
+This year we will have theme nights, but not every other month like we did in previous years. Currently just three are planned, but we may add others. 
 
 See you in Akihabara!

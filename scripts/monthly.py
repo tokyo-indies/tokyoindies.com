@@ -69,10 +69,10 @@ We're accepting presentations on the [presentation page](/en/present).
     print("----- english -----")
     print(enpost)
     if not args.dryrun:
-        isodate = event.isoformat()[:10]
-        with open(f"./content/ja/{isodate}.md", "w") as ofile:
+        isodate = event.isoformat()[:7]
+        with open(f"./content/ja/posts/{isodate}.md", "w") as ofile:
             ofile.write(japost)
-        with open(f"./content/en/{isodate}.md", "w") as ofile:
+        with open(f"./content/en/posts/{isodate}.md", "w") as ofile:
             ofile.write(enpost)
 
     print("----- for socials -----")

@@ -55,7 +55,7 @@ draft: false
 
 次のTokyo Indiesは{event.month}月{event.day}日開催です。
 
-プレゼンを募集しています。詳細については[プレゼン申込みエージ](/present)をご確認ください。
+プレゼンを募集しています。詳細については[プレゼン申込みページ](/present)をご確認ください。
 """
 
     mname = event.strftime("%B")  # "January" etc.
@@ -83,11 +83,11 @@ We're accepting presentations on the [presentation page](/en/present).
     print("----- for socials -----")
     social = """次回のTokyo Indiesは{event.month}月{event.day}日開催です。
 
-会場：MOGRA（秋葉原） 
+会場：MOGRA（秋葉原）
 開催時間：19:00 - 23:00（プレゼンは20:30～）
 入場料：1500円 (1ドリンク付き)
 
-プレゼン申請はこちらから。 
+プレゼン申請はこちらから。
 http://tokyoindies.com/present/
 """
     print(social)

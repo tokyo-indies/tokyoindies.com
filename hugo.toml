@@ -17,10 +17,10 @@ contentDir = 'content/ja'
 weight = 1
 [languages.ja.params]
 madeWith = "Made in [Bear Cub](https://github.com/clente/hugo-bearcub)"
-[languages.ja.pagination]
-disableAliases = false
-pagerSize = 12
-path = 'page'
+# [languages.ja.pagination]
+# disableAliases = false
+# pagerSize = 12
+# path = 'page'
 
 [languages.en]
 title = "Tokyo Indies"
@@ -29,10 +29,10 @@ contentDir = 'content/en'
 weight = 2
 [languages.en.params]
 madeWith = "Made in [Bear Cub](https://github.com/clente/hugo-bearcub)"
-[languages.en.pagination]
-disableAliases = false
-pagerSize = 12
-path = 'page'
+# [languages.en.pagination]
+# disableAliases = false
+# pagerSize = 12
+# path = 'page'
 
 # RSS settings
 [outputs]

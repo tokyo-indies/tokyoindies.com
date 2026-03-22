@@ -1,0 +1,59 @@
+{{ define "main" }}
+<content>
+  <h1>{{ .Title }}</h1>
+  <!-- {{ if .Data.Singular }}
+  <h3 class="blog-filter">{{ i18n "filtering-for" }} "{{ .Title }}"</h3>
+  {{ end }} -->
+
+  {{ range (.Paginate (where .Pages ".Params.unlisted" "!=" "true")).Pages }} {{ if (strings.Contains .Content "<img")
+    }} <div class="recent-image">
+    <div class="recenttext-image">
+      {{ else }}
+      <div class="recent">
+        <div class="recenttext">
+          {{ end }}
+          <a href="{{ .Permalink }}">
+            <h2>{{ .Title }}</h2>
+          </a>
+          <!-- {{ .Summary }} -->
+          {{ .Content | strings.Truncate 300 "..."}}
+        </div>
+        <div class="recentlink"><a href="{{ .Permalink }}">▼</a></div>
+      </div>
+      {{ else }}
+      {{ i18n "no-posts" }}
+
+      {{ end }}
+      <!-- <ul class="blog-posts">
+    {{ range .Pages }}
+    <li>
+      <span>
+        <i>
+          <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+            {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+          </time>
+        </i>
+      </span>
+      {{ if .Params.link }}
+      <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
+      {{ else }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
+    </li>
+    {{ else }}
+    <li>
+      {{ i18n "no-posts" }}
+    </li>
+    {{ end }}
+  </ul> -->
+      <!-- {{ if not .Data.Singular }}
+  <div>
+    {{ range .Site.Taxonomies.tags }}
+    <a class="blog-tags" href="{{ .Page.RelPermalink }}">#{{ lower .Page.Title }}</a>
+    {{ end }}
+  </div>
+  {{ end }} -->
+      <div class="pagination">{{ template "_internal/pagination.html" . }}</div>
+
+</content>
+{{ end }}

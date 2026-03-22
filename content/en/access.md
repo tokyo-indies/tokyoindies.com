@@ -3,7 +3,10 @@ title: "Location and Times"
 date: 2023-08-26T14:43:16+09:00
 draft: false
 menu: 'main'
+weight: 3
 ---
+
+# Location and Times
 
 ## Event Date & Time
 
@@ -15,15 +18,16 @@ Third Wednesday of each month, 19:00～23:00
 
 ## Location
 
-    Akihabara MOGRA
-    Matsubishi Building, 3-11 Akihabara
-    Taito-ku, Tokyo
+> Akihabara MOGRA\
+> Matsubishi Building, 3-11 Akihabara\
+> Taito-ku, Tokyo
 
+## Map
 
 <iframe
   width="600"
   height="450"
-  style="border:0"
+  style="border:0; display:block; margin:auto;"
   loading="lazy"
   allowfullscreen
   referrerpolicy="no-referrer-when-downgrade"

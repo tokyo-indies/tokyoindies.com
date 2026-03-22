@@ -3,7 +3,10 @@ title: "FAQ"
 date: 2023-08-26T14:43:16+09:00
 draft: false
 menu: 'main'
+weight: 2
 ---
+
+# FAQ
 
 This page covers many commonly asked questions about Tokyo Indies. If something isn't clear, feel free to [get in touch](mailto:contact@tokyoindies.com).
 

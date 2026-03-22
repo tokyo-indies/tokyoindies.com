@@ -3,7 +3,10 @@ title: "Apply to Present"
 date: 2023-08-26T14:43:16+09:00
 draft: false
 menu: 'main'
+weight: 4
 ---
+
+# Apply to Present
 
 Tokyo Indies welcomes presenters each month. You can apply to present even if it's your first time at the event, and in-development games are welcome.
 

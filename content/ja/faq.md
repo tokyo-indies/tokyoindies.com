@@ -3,7 +3,10 @@ title: "よくある質問"
 date: 2023-08-26T14:43:16+09:00
 draft: false
 menu: 'main'
+weight: 2
 ---
+
+# よくある質問
 
 このページではイベントに関するよくある質問を集めています。お探しの情報がない場合、[お気軽にご連絡ください](mailto:contact@tokyoindies.com)。
 

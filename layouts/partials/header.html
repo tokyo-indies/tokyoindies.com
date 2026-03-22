@@ -1,0 +1,7 @@
+<div class="header-banner">
+    <a href="{{ relURL .Site.Home.RelPermalink }}" class="title">
+        <img src='{{ "logo.png" | absURL }}' alt="{{ .Site.Title }}">
+    </a>
+    <nav>{{- partial "nav.html" . -}}</nav>
+
+</div>

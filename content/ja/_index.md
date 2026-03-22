@@ -5,7 +5,7 @@ draft: false
 featured_image: /tokyo-indies-banner.png
 ---
 
-# Tokyo Indiesは？
+# Tokyo Indiesへようこそ！
 
 東京インディーズは、月１で個人ゲーム開発者を集まって、お互いのゲームを見せ合ったり意見交換をするのが目的のゆる～い交流会です。
 
@@ -19,3 +19,8 @@ featured_image: /tokyo-indies-banner.png
 登録は[こちらから](http://eepurl.com/iA-lXM)できます。
 [カレンダーに登録すること](https://calendar.google.com/calendar/embed?src=rv9dv84k43vu3v59sislcb093k%40group.calendar.google.com&ctz=Asia%2FTokyo)もできます。
 
+SNSのフォローとDiscordサーバーへの参加はリンクまで⤵
+
+{{< socials >}}
+
+# 最新ニュース

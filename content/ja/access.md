@@ -3,7 +3,10 @@ title: "アクセス"
 date: 2023-08-26T14:43:16+09:00
 draft: false
 menu: 'main'
+weight: 3
 ---
+
+# アクセス
 
 ## 開催日時
 
@@ -16,15 +19,16 @@ menu: 'main'
 
 ## 会場
 
-秋葉原 MOGRA
+> 秋葉原 MOGRA\
+> 東京都台東区秋葉原\
+> 3-11 松菱ビル
 
-東京都台東区秋葉原
-3-11 松菱ビル
+## 地図
 
 <iframe
   width="600"
   height="450"
-  style="border:0"
+  style="border:0; display:block; margin:auto;"
   loading="lazy"
   allowfullscreen
   referrerpolicy="no-referrer-when-downgrade"

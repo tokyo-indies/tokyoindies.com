@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ .Content }}
+<div class="recentblock">
+  {{ range first 3 (where site.RegularPages "Type" "posts").ByDate.Reverse }}
+  <!-- (.Params.featured_image) (.Params.images)  -->
+  {{ if (strings.Contains .Content "<img") }} <div class="recent-image">
+    <div class="recenttext-image">
+      {{ else }}
+      <div class="recent">
+        <div class="recenttext">
+          {{ end }}
+          <a href="{{ .Permalink }}">
+            <h2>{{ .Title }}</h2>
+          </a>
+          <!-- {{ .Summary }} -->
+          {{ .Content | strings.Truncate 300 "..."}}
+        </div>
+        <div class="recentlink"><a href="{{ .Permalink }}">▼</a></div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}

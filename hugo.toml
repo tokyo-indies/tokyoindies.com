@@ -6,6 +6,8 @@ theme = 'hugo-bearcub'
 copyright = "© Tokyo Indies"
 DefaultContentLanguage = 'ja'
 
+# add for reading time
+hasCJKLanguage = true
 
 # Multilingual mode config. More for information about how to setup translation,
 # see https://gohugo.io/content-management/multilingual/

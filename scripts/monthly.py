@@ -81,7 +81,7 @@ We're accepting presentations on the [presentation page](/en/present).
             ofile.write(enpost)
 
     print("----- for socials -----")
-    social = """次回のTokyo Indiesは{event.month}月{event.day}日開催です。
+    social = f"""次回のTokyo Indiesは{event.month}月{event.day}日開催です。
 
 会場：MOGRA（秋葉原）
 開催時間：19:00 - 23:00（プレゼンは20:30～）

@@ -18,7 +18,7 @@ if upfile is not None:
 
     strio = StringIO(upfile.getvalue().decode("utf-8"))
     pres = lineup.read_tsv(strio)
-    intro = st.text_input("Intro text", "今月の紹介作品:")
+    intro = st.text_input("Intro text (you can edit this)", "今月の紹介作品:")
 
     st.write("# Twitter")
     st.code(lineup.post_twitter(intro, pres), language="markdown")

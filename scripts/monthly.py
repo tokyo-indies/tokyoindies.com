@@ -2,8 +2,9 @@
 from datetime import date, timedelta, datetime
 import calendar
 from zoneinfo import ZoneInfo
-
 import argparse
+from pathlib import Path
+import os
 
 
 def get_third_wed(dd=None):
@@ -74,6 +75,14 @@ We're accepting presentations on the [presentation page](/en/present).
     print("----- english -----")
     print(enpost)
     if not args.dryrun:
+
+
+        # XXX This is a hack to make sure we're in the right directory.
+        # Realistically this will only be run from root or scripts/.
+        if Path.cwd().name == "scripts":
+            os.chdir("..")
+
+        assert Path("./content/ja/posts").is_dir(), "Please run from the source dir"
         isodate = event.isoformat()[:7]
         with open(f"./content/ja/posts/{isodate}.md", "w") as ofile:
             ofile.write(japost)

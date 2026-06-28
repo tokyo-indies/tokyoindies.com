@@ -2,7 +2,7 @@
 baseURL = 'https://tokyoindies.com/'
 languageCode = 'ja-jp'
 title = 'Tokyo Indies'
-theme = 'hugo-bearcub'
+theme = ['hugo-bearcub', "hugo-shortcode-gallery"]
 copyright = "© Tokyo Indies"
 DefaultContentLanguage = 'ja'
 

@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.145.0
+      HUGO_VERSION: 0.163.3
     steps:
       - name: Install Hugo CLI
         run: |
@@ -45,13 +45,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-
-     # Probably wont' do anything...
-      - name: Force Sync Submodules
-        run: |
-           git submodule sync --recursive
-           git submodule update --init --recursive --force
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6

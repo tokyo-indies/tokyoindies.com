@@ -16,6 +16,8 @@ This page covers many commonly asked questions about Tokyo Indies. If something 
 
 The event is mainly indie devs casually hanging out in a bar. Anyone is welcome to set up a demo of their game at an empty table, so it's a good opportunity to see what's in development or get feedback on a prototype. Starting from 8:30 for roughly one hour, there will be presentations by a few developers in the basement club space.
 
+Check out our [photo gallery](/en/posts/2026-photo-gallery) to see what the venue looks like!
+
 
 ## How do I participate?
 

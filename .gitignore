@@ -8,3 +8,4 @@ site/
 hugo_stats.json
 .hugo_build.lock
 testhugo.bat
+hugo.exe

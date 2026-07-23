@@ -15,9 +15,7 @@ featured_image: /tokyo-indies-banner.png
 
 [プレゼン申請はこちらから！](/present)
 
-毎月の開催日をメールにて通知いたします。\
-登録は[こちらから](https://preview.mailerlite.io/forms/2079762/182653959165446101/share)できます。
-[カレンダーに登録すること](https://calendar.google.com/calendar/embed?src=rv9dv84k43vu3v59sislcb093k%40group.calendar.google.com&ctz=Asia%2FTokyo)もできます。
+毎月の開催日を忘れないように[カレンダーに登録しましょう](https://calendar.google.com/calendar/embed?src=rv9dv84k43vu3v59sislcb093k%40group.calendar.google.com&ctz=Asia%2FTokyo)。
 
 SNSのフォローとDiscordサーバーへの参加はリンクまで⤵
 

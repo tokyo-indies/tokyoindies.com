@@ -4,30 +4,13 @@ import io
 import re
 
 from lineup import read_tsv
+from util import fetch_image
 
 import requests
 from PIL import Image
 from fpdf import FPDF
 
 
-def fetch_image(url):
-    # Download an image and give a pillow object
-    try:
-        # if it's google drive, we need to do some monkey business
-        if "drive.google.com" in url:
-            match = re.search(r"/d/([a-zA-Z0-9_-]+)", url)
-            if not match:
-                raise ValueError("Invalid Google Drive sharing link format.")
-
-            file_id = match.group(1)
-            url = f"https://drive.usercontent.google.com/download?id={file_id}"
-
-        res = requests.get(url)
-        image = Image.open(io.BytesIO(res.content))
-    except Exception as ee:
-        print(ee)
-        image = Image.new(mode="RGB", size=(400, 400), color="white")
-    return image
 
 
 def make_qr(url):

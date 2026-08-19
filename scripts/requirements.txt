@@ -1,1 +1,5 @@
 streamlit
+fpdf2
+requests
+pillow
+qrcode[pil]

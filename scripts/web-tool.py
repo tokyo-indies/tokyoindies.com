@@ -4,6 +4,7 @@ from io import StringIO
 import streamlit as st
 
 import lineup
+from qrtool import build_qr_pdf
 
 st.write(
     """
@@ -22,6 +23,13 @@ if upfile is not None:
 
     image = lineup.build_image(pres)
     st.image(image)
+
+    "---"
+    st.write("# QR Lineup")
+
+
+    make_pdf = lambda: bytes(build_qr_pdf(pres).output())
+    st.download_button("Download QR Lineup PDF", make_pdf, "tokyo-indies-qr.pdf")
 
     "---"
 

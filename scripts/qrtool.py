@@ -10,8 +10,6 @@ from PIL import Image
 from fpdf import FPDF
 
 
-
-
 def make_qr(url):
     """Given a URL, return a pillow image with no border."""
     # Removing the border is weird for some reason
@@ -27,6 +25,17 @@ def make_qr(url):
 
 
 def build_qr_pdf(presenters):
+    clean = []
+    for pres in presenters:
+        clean.append(
+            [
+                pres["image"],
+                pres["homepage"],
+                pres["title"],
+                pres["name"],
+            ]
+        )
+    presenters = clean
     # presenters are:
     # [image url, qr url, title, author]
 
@@ -66,13 +75,11 @@ def build_qr_pdf(presenters):
         pdf.write_html(f"<center><b>{title}</b><br>{author}</center>")
         pdf.set_xy(margin, Y + height + 2)
 
-    pdf.output("blarg.pdf")
+    return pdf
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        prog="qrtool", description="Generate QR ref pdf"
-    )
+    parser = argparse.ArgumentParser(prog="qrtool", description="Generate QR ref pdf")
     parser.add_argument("tsv")
 
     args = parser.parse_args()
@@ -80,17 +87,9 @@ def main():
     with open(args.tsv) as tsvfile:
         presenters = read_tsv(tsvfile)
 
-    clean = []
-    for pres in presenters:
-        clean.append(
-            [
-                pres["image"],
-                pres["homepage"],
-                pres["title"],
-                pres["name"],
-            ]
-        )
-    build_qr_pdf(clean)
+    pdf = build_qr_pdf(presenters)
+
+    pdf.output("qr-lineup.pdf")
 
 
 if __name__ == "__main__":

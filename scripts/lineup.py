@@ -7,6 +7,7 @@ from util import read_tsv, fetch_image
 
 from PIL import Image, ImageOps
 
+
 def build_image(presentations):
     # build a composite image with the lineup
 
@@ -30,9 +31,9 @@ def build_image(presentations):
         col = ii % 2
 
         offset = (
-                (margin + (col * margin) + (col * sz[0])),
-                (margin + (row * margin) + (row * sz[1])),
-                 )
+            (margin + (col * margin) + (col * sz[0])),
+            (margin + (row * margin) + (row * sz[1])),
+        )
         canvas.paste(image, offset)
 
     return canvas

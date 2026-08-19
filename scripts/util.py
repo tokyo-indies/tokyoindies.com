@@ -5,6 +5,7 @@ import io
 import requests
 from PIL import Image
 
+
 def remap(row):
 
     remapper = {
@@ -48,6 +49,7 @@ def read_tsv(tsvfile):
         presentations.append(remap(row))
 
     return presentations
+
 
 def fetch_image(url):
     # Download an image and give a pillow object

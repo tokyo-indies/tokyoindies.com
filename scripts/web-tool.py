@@ -27,7 +27,6 @@ if upfile is not None:
     "---"
     st.write("# QR Lineup")
 
-
     make_pdf = lambda: bytes(build_qr_pdf(pres).output())
     st.download_button("Download QR Lineup PDF", make_pdf, "tokyo-indies-qr.pdf")
 
@@ -45,4 +44,3 @@ if upfile is not None:
     "---"
     st.write("# HTML (blog post)")
     st.code(lineup.post_html(intro, pres), language="markdown")
-

@@ -15,6 +15,7 @@ def remap(row):
         "作者のDiscordユーザー名": "discord",
         "作品ホームページ": "homepage",
         "PV・紹介動画(可能ならYouTubeで)": "pv",
+        "告知画像・スクリーンショット": "image",
     }
 
     out = {}

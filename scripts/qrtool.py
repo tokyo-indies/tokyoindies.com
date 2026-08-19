@@ -3,8 +3,7 @@ import qrcode
 import io
 import re
 
-from lineup import read_tsv
-from util import fetch_image
+from util import fetch_image, read_tsv
 
 import requests
 from PIL import Image

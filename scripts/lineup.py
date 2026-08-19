@@ -1,10 +1,40 @@
 #!/usr/bin/env python
 # generate social media posts
-import csv
 import sys
 import re
 
-from util import read_tsv
+from util import read_tsv, fetch_image
+
+from PIL import Image, ImageOps
+
+def build_image(presentations):
+    # build a composite image with the lineup
+
+    # the final image is 1080x1080 px with 10px borders
+    # so each cell is 525x346
+    sz = (525, 346)
+
+    images = [fetch_image(pres["image"]) for pres in presentations]
+    default = Image.open("banner.png")
+    while len(images) < 6:
+        images.append(default)
+    images = [ImageOps.fit(ii, sz) for ii in images]
+
+    margin = 10
+    x = margin
+    y = margin
+    canvas = Image.new(mode="RGB", size=(1080, 1080), color="white")
+
+    for ii, image in enumerate(images):
+        row = ii // 2
+        col = ii % 2
+
+        offset = (
+                (margin + (col * margin) + (col * sz[0])),
+                (margin + (row * margin) + (row * sz[1])),
+                 )
+        canvas.paste(image, offset)
+    canvas.save("blarg.png")
 
 
 def post_twitter(intro, presentations):
@@ -91,6 +121,8 @@ def main():
     print()
     print("----- html -----")
     print(post_html(intro, presentations))
+
+    build_image(presentations)
 
 
 if __name__ == "__main__":

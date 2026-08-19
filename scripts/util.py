@@ -1,6 +1,9 @@
+import csv
+import re
+import io
+
 import requests
 from PIL import Image
-
 
 def remap(row):
 

@@ -9,6 +9,7 @@ import requests
 from PIL import Image
 from fpdf import FPDF
 
+
 def fetch_image(url):
     # Download an image and give a pillow object
     try:
@@ -17,7 +18,7 @@ def fetch_image(url):
             match = re.search(r"/d/([a-zA-Z0-9_-]+)", url)
             if not match:
                 raise ValueError("Invalid Google Drive sharing link format.")
-        
+
             file_id = match.group(1)
             url = f"https://drive.usercontent.google.com/download?id={file_id}"
 
@@ -42,10 +43,10 @@ def make_qr(url):
     img.save(buf, format="PNG")
     return buf
 
+
 def build_qr_pdf(presenters):
     # presenters are:
     # [image url, qr url, title, author]
-
 
     pdf = FPDF()
     pdf.add_page()
@@ -58,21 +59,21 @@ def build_qr_pdf(presenters):
     margin = 10
     color = "#134f5c"
 
-    pdf.set_text_color(0x13, 0x4f, 0x5c)
+    pdf.set_text_color(0x13, 0x4F, 0x5C)
 
     # columns
     c1w = pdf.epw * 0.4
     c2w = pdf.epw * 0.3
     c3w = pdf.epw * 0.3
 
-    for (image_url, url, title, author) in presenters:
+    for image_url, url, title, author in presenters:
         X = margin
-        Y = pdf.get_y() # will re-use
+        Y = pdf.get_y()  # will re-use
         # center the image
         img = fetch_image(image_url)
         iinfo = pdf.image(img, h=height, w=c1w, x=X, keep_aspect_ratio=True)
-        #iwidth = iinfo.rendered_width
-        #pdf.image(ipath, w=c1w, x = (c1w - iwidth) // 2)
+        # iwidth = iinfo.rendered_width
+        # pdf.image(ipath, w=c1w, x = (c1w - iwidth) // 2)
 
         X += c1w
         qr = make_qr(url)
@@ -85,10 +86,10 @@ def build_qr_pdf(presenters):
 
     pdf.output("blarg.pdf")
 
+
 def main():
     parser = argparse.ArgumentParser(
-        prog="ProgramName",
-        description="What the program does"
+        prog="ProgramName", description="What the program does"
     )
     parser.add_argument("tsv")
 
@@ -96,15 +97,17 @@ def main():
 
     with open(args.tsv) as tsvfile:
         presenters = read_tsv(tsvfile)
-    
+
     clean = []
     for pres in presenters:
-        clean.append([
-            pres["image"],
-            pres["homepage"],
-            pres["title"],
-            pres["name"],
-            ])
+        clean.append(
+            [
+                pres["image"],
+                pres["homepage"],
+                pres["title"],
+                pres["name"],
+            ]
+        )
     build_qr_pdf(clean)
 
 

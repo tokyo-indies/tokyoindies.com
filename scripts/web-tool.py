@@ -20,6 +20,11 @@ if upfile is not None:
     pres = lineup.read_tsv(strio)
     intro = st.text_input("Intro text (you can edit this)", "今月の紹介作品:")
 
+    image = lineup.build_image(pres)
+    st.image(image)
+
+    "---"
+
     st.write("# Twitter")
     st.code(lineup.post_twitter(intro, pres), language="markdown")
     "---"
@@ -32,3 +37,4 @@ if upfile is not None:
     "---"
     st.write("# HTML (blog post)")
     st.code(lineup.post_html(intro, pres), language="markdown")
+

@@ -34,7 +34,8 @@ def build_image(presentations):
                 (margin + (row * margin) + (row * sz[1])),
                  )
         canvas.paste(image, offset)
-    canvas.save("blarg.png")
+
+    return canvas
 
 
 def post_twitter(intro, presentations):
@@ -122,7 +123,8 @@ def main():
     print("----- html -----")
     print(post_html(intro, presentations))
 
-    build_image(presentations)
+    image = build_image(presentations)
+    image.save("lineup.png")
 
 
 if __name__ == "__main__":

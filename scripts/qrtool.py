@@ -89,7 +89,7 @@ def build_qr_pdf(presenters):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="ProgramName", description="What the program does"
+        prog="qrtool", description="Generate QR ref pdf"
     )
     parser.add_argument("tsv")
 

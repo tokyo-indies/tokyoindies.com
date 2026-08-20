@@ -27,7 +27,7 @@ def main():
         presentations = read_tsv(tsvfile)
 
     shortdate = now.strftime("%Y%m")
-    ja_content = post_html("", presentations)
+    ja_content = post_html("", presentations).strip()
     japost = f"""---
 title: "{now.year}年{now.month}月のTokyo Indiesで紹介されたゲーム"
 date: {now}
@@ -43,7 +43,7 @@ featured_image: "img/tokyo-indies-{shortdate}.png"
 
 今回のプレゼンは[Twitch]({args.twitch})で配信しています。また来月アキバで会いましょう！
 """
-    en_content = post_html("", presentations)
+    en_content = post_html("", presentations).strip()
     mname = now.strftime("%B")
     enpost = f"""---
 title: "Games Shown at {mname} {now.year} Tokyo Indies"

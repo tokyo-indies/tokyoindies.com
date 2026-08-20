@@ -1,6 +1,7 @@
 import csv
 from io import StringIO
 import os
+from pathlib import Path
 
 import streamlit as st
 
@@ -8,7 +9,10 @@ import lineup
 from qrtool import build_qr_pdf
 
 # change working dir to scripts directory
-os.chdir("scripts")
+# locally this is usually run from the scripts directory, but Streamlit Cloud
+# runs it from repo root
+if Path(".").absolute().name == "tokyoindies.com":
+    os.chdir("scripts")
 
 st.write(
     """

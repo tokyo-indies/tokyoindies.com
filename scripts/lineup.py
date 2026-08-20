@@ -81,7 +81,7 @@ def post_discord(intro, presentations):
     return out
 
 
-def post_html(intro, presentations):
+def post_markdown(intro, presentations):
     out = intro + "\n\n"
 
     for presen in presentations:
@@ -120,8 +120,8 @@ def main():
     print(post_discord(intro, presentations))
 
     print()
-    print("----- html -----")
-    print(post_html(intro, presentations))
+    print("----- markdown -----")
+    print(post_markdown(intro, presentations))
 
     image = build_image(presentations)
     image.save("lineup.png")

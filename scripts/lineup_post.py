@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 from pathlib import Path
 import os
 
-from lineup import post_html
+from lineup import post_markdown
 from util import read_tsv
 
 def main():
@@ -27,7 +27,7 @@ def main():
         presentations = read_tsv(tsvfile)
 
     shortdate = now.strftime("%Y%m")
-    ja_content = post_html("", presentations).strip()
+    ja_content = post_markdown("", presentations).strip()
     japost = f"""---
 title: "{now.year}年{now.month}月のTokyo Indiesで紹介されたゲーム"
 date: {now}
@@ -43,7 +43,7 @@ featured_image: "img/tokyo-indies-{shortdate}.png"
 
 今回のプレゼンは[Twitch]({args.twitch})で配信しています。また来月アキバで会いましょう！
 """
-    en_content = post_html("", presentations).strip()
+    en_content = post_markdown("", presentations).strip()
     mname = now.strftime("%B")
     enpost = f"""---
 title: "Games Shown at {mname} {now.year} Tokyo Indies"
@@ -73,7 +73,8 @@ A recording of the presentations is also [viewable on Twitch]({args.twitch}). Se
             ofile.write(japost)
         with open(f"./content/en/posts/{isodate}-lineup.md", "w") as ofile:
             ofile.write(enpost)
-    print("done")
+    print("Generated lineup posts")
+    print("Remember to edit English if game titles or author names are in Japanese!")
 
 if __name__ == "__main__":
     main()

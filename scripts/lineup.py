@@ -7,8 +7,7 @@ from util import read_tsv, fetch_image
 
 from PIL import Image, ImageOps
 
-
-def build_image(presentations):
+def build_image(presentations, default="tokyo-indies-3.2.png"):
     # build a composite image with the lineup
 
     # the final image is 1080x1080 px with 10px borders
@@ -16,7 +15,7 @@ def build_image(presentations):
     sz = (525, 346)
 
     images = [fetch_image(pres["image"]) for pres in presentations]
-    default = Image.open("tokyo-indies-3.2.png")
+    default = Image.open(default)
     while len(images) < 6:
         images.append(default)
     images = [ImageOps.fit(ii, sz) for ii in images]

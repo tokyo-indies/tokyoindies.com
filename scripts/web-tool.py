@@ -1,10 +1,14 @@
 import csv
 from io import StringIO
+import os
 
 import streamlit as st
 
 import lineup
 from qrtool import build_qr_pdf
+
+# change working dir to scripts directory
+os.chdir("scripts")
 
 st.write(
     """

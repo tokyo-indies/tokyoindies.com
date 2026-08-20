@@ -1,52 +1,42 @@
 #!/usr/bin/env python
 # generate social media posts
-import csv
 import sys
 import re
 
+from util import read_tsv, fetch_image
 
-def remap(row):
-
-    remapper = {
-        "プレゼンター名": "name",
-        "作品名": "title",
-        "BlueSky": "bluesky",
-        "作者X(Twitter)など": "twitter",
-        "作者のDiscordユーザー名": "discord",
-        "作品ホームページ": "homepage",
-        "PV・紹介動画(可能ならYouTubeで)": "pv",
-    }
-
-    out = {}
-    for key, val in remapper.items():
-        out[val] = row.get(key).strip()
-
-    # fix socials
-    out["twitter"] = out["twitter"].replace("https://x.com/", "@")
-    # this is old but people still give it to us sometimes
-    out["twitter"] = out["twitter"].replace("https://twitter.com/", "@")
-    out["bluesky"] = out["bluesky"].replace("https://bsky.app/profile/", "@")
-    # If someone puts a username like "@user" that doesn't work
-    if out["bluesky"] is not None and "." not in out["bluesky"]:
-        out["bluesky"] = out["bluesky"] + ".bsky.social"
-    out["discord"] = ("@" + out["discord"]) if out["discord"] else ""
-
-    # remove non-url values like "will send later"
-    for key in ("homepage", "pv"):
-        if not re.match("https?://", out[key]):
-            out[key] = ""
-    return out
+from PIL import Image, ImageOps
 
 
-def read_tsv(tsvfile):
-    presentations = []
-    reader = csv.DictReader(tsvfile, delimiter="\t")
-    for row in reader:
-        if row["Status"] != "Confirmed":
-            continue
-        presentations.append(remap(row))
+def build_image(presentations):
+    # build a composite image with the lineup
 
-    return presentations
+    # the final image is 1080x1080 px with 10px borders
+    # so each cell is 525x346
+    sz = (525, 346)
+
+    images = [fetch_image(pres["image"]) for pres in presentations]
+    default = Image.open("banner.png")
+    while len(images) < 6:
+        images.append(default)
+    images = [ImageOps.fit(ii, sz) for ii in images]
+
+    margin = 10
+    x = margin
+    y = margin
+    canvas = Image.new(mode="RGB", size=(1080, 1080), color="white")
+
+    for ii, image in enumerate(images):
+        row = ii // 2
+        col = ii % 2
+
+        offset = (
+            (margin + (col * margin) + (col * sz[0])),
+            (margin + (row * margin) + (row * sz[1])),
+        )
+        canvas.paste(image, offset)
+
+    return canvas
 
 
 def post_twitter(intro, presentations):
@@ -133,6 +123,9 @@ def main():
     print()
     print("----- html -----")
     print(post_html(intro, presentations))
+
+    image = build_image(presentations)
+    image.save("lineup.png")
 
 
 if __name__ == "__main__":

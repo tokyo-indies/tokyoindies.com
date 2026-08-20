@@ -1,0 +1,96 @@
+import argparse
+import qrcode
+import io
+import re
+
+from util import fetch_image, read_tsv
+
+import requests
+from PIL import Image
+from fpdf import FPDF
+
+
+def make_qr(url):
+    """Given a URL, return a pillow image with no border."""
+    # Removing the border is weird for some reason
+    qr = qrcode.QRCode(border=0)
+    qr.add_data(url)
+    qr.make(fit=True)
+
+    img = qr.make_image(fill_color="black", back_color="white")
+
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    return buf
+
+
+def build_qr_pdf(presenters):
+    clean = []
+    for pres in presenters:
+        clean.append(
+            [
+                pres["image"],
+                pres["homepage"],
+                pres["title"],
+                pres["name"],
+            ]
+        )
+    presenters = clean
+    # presenters are:
+    # [image url, qr url, title, author]
+
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("helvetica", style="B", size=16)
+    pdf.image("qr-header.png", w=pdf.epw)
+    pdf.ln()
+
+    # units are mm
+    height = 40
+    margin = 10
+    color = "#134f5c"
+
+    pdf.set_text_color(0x13, 0x4F, 0x5C)
+
+    # columns
+    c1w = pdf.epw * 0.4
+    c2w = pdf.epw * 0.3
+    c3w = pdf.epw * 0.3
+
+    for image_url, url, title, author in presenters:
+        X = margin
+        Y = pdf.get_y()  # will re-use
+        # center the image
+        img = fetch_image(image_url)
+        iinfo = pdf.image(img, h=height, w=c1w, x=X, keep_aspect_ratio=True)
+        # iwidth = iinfo.rendered_width
+        # pdf.image(ipath, w=c1w, x = (c1w - iwidth) // 2)
+
+        X += c1w
+        qr = make_qr(url)
+        pdf.image(qr, h=height, x=X + 10, y=Y)
+
+        X += c2w
+        pdf.set_xy(X, Y)
+        pdf.write_html(f"<center><b>{title}</b><br>{author}</center>")
+        pdf.set_xy(margin, Y + height + 2)
+
+    return pdf
+
+
+def main():
+    parser = argparse.ArgumentParser(prog="qrtool", description="Generate QR ref pdf")
+    parser.add_argument("tsv")
+
+    args = parser.parse_args()
+
+    with open(args.tsv) as tsvfile:
+        presenters = read_tsv(tsvfile)
+
+    pdf = build_qr_pdf(presenters)
+
+    pdf.output("qr-lineup.pdf")
+
+
+if __name__ == "__main__":
+    main()

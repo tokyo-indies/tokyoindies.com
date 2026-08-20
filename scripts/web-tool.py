@@ -4,6 +4,7 @@ from io import StringIO
 import streamlit as st
 
 import lineup
+from qrtool import build_qr_pdf
 
 st.write(
     """
@@ -19,6 +20,17 @@ if upfile is not None:
     strio = StringIO(upfile.getvalue().decode("utf-8"))
     pres = lineup.read_tsv(strio)
     intro = st.text_input("Intro text (you can edit this)", "今月の紹介作品:")
+
+    image = lineup.build_image(pres)
+    st.image(image)
+
+    "---"
+    st.write("# QR Lineup")
+
+    make_pdf = lambda: bytes(build_qr_pdf(pres).output())
+    st.download_button("Download QR Lineup PDF", make_pdf, "tokyo-indies-qr.pdf")
+
+    "---"
 
     st.write("# Twitter")
     st.code(lineup.post_twitter(intro, pres), language="markdown")

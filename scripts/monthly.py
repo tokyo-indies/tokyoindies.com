@@ -76,7 +76,6 @@ We're accepting presentations on the [presentation page](/en/present).
     print(enpost)
     if not args.dryrun:
 
-
         # XXX This is a hack to make sure we're in the right directory.
         # Realistically this will only be run from root or scripts/.
         if Path.cwd().name == "scripts":

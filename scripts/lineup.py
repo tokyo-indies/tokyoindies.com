@@ -12,7 +12,7 @@ def build_image(presentations, default="tokyo-indies-3.2.png"):
 
     # the final image is 1080x1080 px with 10px borders
     # so each cell is 525x346
-    sz = (525, 346)
+    sz = (960, 540)
 
     images = [fetch_image(pres["image"]) for pres in presentations]
     default = Image.open(default)
@@ -23,7 +23,7 @@ def build_image(presentations, default="tokyo-indies-3.2.png"):
     margin = 10
     x = margin
     y = margin
-    canvas = Image.new(mode="RGB", size=(1080, 1080), color="white")
+    canvas = Image.new(mode="RGB", size=(1950, 1660), color="white")
 
     for ii, image in enumerate(images):
         row = ii // 2

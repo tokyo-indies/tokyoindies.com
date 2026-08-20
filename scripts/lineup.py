@@ -16,7 +16,7 @@ def build_image(presentations):
     sz = (525, 346)
 
     images = [fetch_image(pres["image"]) for pres in presentations]
-    default = Image.open("banner.png")
+    default = Image.open("tokyo-indies-3.2.png")
     while len(images) < 6:
         images.append(default)
     images = [ImageOps.fit(ii, sz) for ii in images]

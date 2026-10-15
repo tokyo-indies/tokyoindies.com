@@ -21,7 +21,7 @@ def remap(row):
 
     out = {}
     for key, val in remapper.items():
-        out[val] = row.get(key).strip()
+        out[val] = (row.get(key) or "").strip()
 
     # fix socials
     out["twitter"] = out["twitter"].replace("https://x.com/", "@")
@@ -29,7 +29,7 @@ def remap(row):
     out["twitter"] = out["twitter"].replace("https://twitter.com/", "@")
     out["bluesky"] = out["bluesky"].replace("https://bsky.app/profile/", "@")
     # If someone puts a username like "@user" that doesn't work
-    if out["bluesky"] is not None and "." not in out["bluesky"]:
+    if out["bluesky"] and "." not in out["bluesky"]:
         out["bluesky"] = out["bluesky"] + ".bsky.social"
     out["discord"] = ("@" + out["discord"]) if out["discord"] else ""
 
